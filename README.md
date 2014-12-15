@@ -24,8 +24,27 @@ function Person(name) {
 // Create `isPerson` function
 var isPerson = is(Person);
 isPerson(new Person('foo')); // → true
-isPerson({})                 // → false
+isPerson({});                // → false
+
+// if second argument set to true
+// it's test with instanceof operator
+var isObject = is(Object, true);
+isObject(new Person('bar')); // → true
 ```
+
+##Table of contents:
+- [is](#is)
+- [static functions](#statismethods)
+  - [is.array](#isarray)
+  - [is.date](#isdate)
+  - [is.defined](#isdefined)
+  - [is.undefined](#isundefined)
+  - [is.function](#isfunction)
+  - [is.integer](#isinteger)
+  - [is.object](#isobject)
+  - [is.number](#isnumber)
+  - [is.promise](#ispromise)
+  - [is.string](#isstring)
 
 ## License
 
