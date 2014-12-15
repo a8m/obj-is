@@ -1,0 +1,27 @@
+{
+  "name": "obj-is",
+  "version": "0.0.0",
+  "description": "is-function's creator",
+  "license": "MIT",
+  "repository": "a8m/obj-is",
+  "author": {
+    "name": "Ariel Mashraki",
+    "email": "ariel@mashraki.co.il",
+    "url": "https://github.com/a8m/obj-is"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- -u exports test.js"
+  },
+  "keywords": [
+    "obj",
+    "obj-is"
+  ],
+  "devDependencies": {
+    "istanbul": "^0.3.2",
+    "mocha": "*",
+    "should": "^4.0.4"
+  }
+}
