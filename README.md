@@ -13,6 +13,7 @@ $ npm install --save obj-is
 ```
 
 ##Usage
+####`is(constructor, inherit[boolean])`
 ```js
 var is = require('obj-is');
 
@@ -26,8 +27,7 @@ var isPerson = is(Person);
 isPerson(new Person('foo')); // → true
 isPerson({});                // → false
 
-// if second argument set to true
-// it's test with instanceof operator
+// if inherit set to true its test with the `instanceof` operator
 var isObject = is(Object, true);
 isObject(new Person('bar')); // → true
 ```
